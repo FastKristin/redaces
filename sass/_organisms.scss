@@ -1,0 +1,63 @@
+body {
+  background-color: $color-white;
+}
+
+.entry-content {
+  padding-top: 2rem;
+}
+
+//banners
+.banner {
+  position: relative;
+  min-height: 300px;
+  background-position: 50% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media(min-width: 768px) {
+    min-height: 450px;
+  }
+  // @media(min-width: 1200px) {
+  //   min-height: 550px;
+  // }
+  h1 {
+    position: absolute;
+    bottom: 15%;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    @media(min-width: 768px) {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.overlay-dark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg,rgba(70,70,70,0),rgba(70,70,70,0.6));
+  z-index: 2;
+}
+
+//cards
+
+.card-title {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0;
+}
+.card-body {
+  background-color: lighten($color-secondary, 75%);
+}
+
+
+//Lists
+
+ul {
+  list-style: none;
+  padding-left: 0.25rem;
+  li {
+
+  }
+}

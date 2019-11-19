@@ -1,0 +1,71 @@
+//Colours
+
+.white {
+  color: $color-white;
+  a {
+    color: $color-white;
+    &:hover, &:active {
+      color: darken($color-white, 20%);
+    }
+  }
+}
+
+.primary {
+  color: $color-primary;
+}
+
+.bg-primary {
+  background-color: $color-primary!important;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+}
+
+//Fonts
+
+.lead {
+  font-size: 1.25rem;
+  @media (min-width: 768px) {
+    font-size: 1.35rem;
+  }
+}
+
+.limelight {
+  font-family: $second-font-family;
+}
+
+.montserrat {
+  font-family: $base-font-family!important;
+}
+
+
+// Headings
+
+h1, h2, h3 {
+  font-family: $second-font-family!important;
+  color: $color-primary;
+  padding-bottom: 1rem;
+}
+
+
+//Links
+
+a {
+  color: $color-primary;
+  &:hover, &:active {
+    color: lighten($color-primary,12%);
+  }
+  &.white {
+    color: $color-white;
+    &:hover, &:active {
+      color: darken($color-white, 5%)!important;
+    }
+  }
+}
+
+//visibility
+
+.hidden {
+  display: none;
+}
